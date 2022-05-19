@@ -11,10 +11,6 @@ public class FactoryMovieProducer {
                 return new HollywoodFactory();
             case "BOLLYWOOD":
                 return new BollywoodFactory();
-            case "ACTION":
-                return new ActionMovieFactory();
-            case "COMEDY":
-                return new ComedyMovieFactory();
             default:
                 throw new IllegalArgumentException("Unknown type " + type);
         }

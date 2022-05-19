@@ -52,29 +52,3 @@ class BollywoodFactory extends AbstractMovieFactory {
         }
     }
 }
-
-class ActionMovieFactory extends AbstractMovieFactory {
-
-    @Override
-    Hollywood getHollywoodMovie(String type) {
-        return new HollywoodActionMovie();
-    }
-
-    @Override
-    Bollywood getBollywoodMovie(String type) {
-        return new BollywoodActionMovie();
-    }
-}
-
-class ComedyMovieFactory extends AbstractMovieFactory {
-
-    @Override
-    Hollywood getHollywoodMovie(String type) {
-        return new HollywoodComedyMovie();
-    }
-
-    @Override
-    Bollywood getBollywoodMovie(String type) {
-        return new BollywoodComedyMovie();
-    }
-}
