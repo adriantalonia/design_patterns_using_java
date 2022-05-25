@@ -70,4 +70,14 @@ public static Singleton getInstance() {
 2) Synchronized approach 
    - thread safe
    - multi-threaded 
-3) Double
+3) Double-checked locking principle
+   - thread safe
+   - increases performance from the synchronized approach
+4) Eager evaluation approach
+   - doesn't use a lot of resources
+   - thread safe
+   - the instance is created even though client application might not be using it
+5) Bill pugh
+   - high performance 
+   - ensures that the instance is only created if a client needs it
+   - create the singleton class using an inner static helper class
