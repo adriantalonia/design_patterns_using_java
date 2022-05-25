@@ -2,7 +2,7 @@ package com.atr.creational_patterns.singleton.lazy_initialization;
 
 public class SingletonLazy {
     //private reference to the one and only instance
-    private static SingletonLazy unitInstance = null;
+    private static SingletonLazy uniqueInstance = null;
 
     //an instance attribute
     private int data = 0;
@@ -10,11 +10,11 @@ public class SingletonLazy {
     private SingletonLazy() {}
 
     public static SingletonLazy getInstance() {
-        if (unitInstance == null) {
-            unitInstance = new SingletonLazy();
+        if (uniqueInstance == null) {
+            uniqueInstance = new SingletonLazy();
         }
 
-        return unitInstance;
+        return uniqueInstance;
     }
 
     public void setDate(int myData){
