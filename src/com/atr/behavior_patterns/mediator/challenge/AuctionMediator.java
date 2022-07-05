@@ -34,5 +34,9 @@ class AuctionMediator implements Mediator {
             b.auctionHasEnded();
         }
         System.out.println("The auction winner is: " + winner.name + ". He paid $" + winner.price + " for the item");
+
+        for (Buyer b : this.buyers) {
+            b.auctionHasEnded();
+        }
     }
 }
